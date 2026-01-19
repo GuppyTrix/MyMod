@@ -73,3 +73,13 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+
+UE4Project/.vs/*
+UE4Project/Binaries/Win64/*.pdb
+UE4Project/Build/*
+UE4Project/Intermediate/*
+UE4Project/Saved/*
+UE4Project/Content/Collections
+UE4Project/Content/Developers
+
