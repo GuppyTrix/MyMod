@@ -89,20 +89,24 @@ local function ComputeChancePercent(modDA, modInfo, weaponDA, diceShotBonus, tot
 	if not modDA or not modDA:IsValid() then
 		return nil
 	end
+
 	local triggerChanceType = modDA.TriggerChanceType
 	print(string.format("[Testing] TriggerChanceType=%s for %s", tostring(triggerChanceType), ToLuaString(modDA.Name)))
 	if triggerChanceType == TRIGGER_CHANCE_TYPE.NotChanceBased then
 		return nil
 	end
+
 	local baseBuff = totalBuff and totalBuff ~= 0 and totalBuff or GetScaledBuff(modDA, modInfo)
 	print(string.format("[Testing] BaseBuff=%s (AccumulatedBuff=%s, Level=%s) for %s", tostring(baseBuff), tostring(modInfo and modInfo.AccumulatedBuff), tostring(modInfo and modInfo.Level), ToLuaString(modDA.Name)))
 	if triggerChanceType == TRIGGER_CHANCE_TYPE.HalfScalingTriggerChance then
 		baseBuff = baseBuff * 0.5
 	end
+
 	local weaponMultiplier = 1
 	if weaponDA and weaponDA:IsValid() and weaponDA.WeaponModTriggerRollMultiplier then
 		weaponMultiplier = weaponDA.WeaponModTriggerRollMultiplier
 	end
+	
 	print(string.format("[Testing] WeaponModTriggerRollMultiplier=%s", tostring(weaponMultiplier)))
 	local diceMultiplier = 1 + (diceShotBonus or 0) / 100
 	print(string.format("[Testing] DiceShotBonus=%s => Multiplier=%s", tostring(diceShotBonus or 0), tostring(diceMultiplier)))
