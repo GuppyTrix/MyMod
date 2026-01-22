@@ -14,5 +14,14 @@ del /S CrabChampions\*.ufont
 robocopy /job:Tools\configs\copy_cooked_assets 
  
 robocopy /S Precooked CrabChampions 
-pause
+
+SET /p packageOutput= < Tools\user_settings\package_output.txt 
+python Tools\py\u4pak.py pack "%packageOutput%" CrabChampions -p 
+
+
+start "" "D:\Games\steamapps\common\Crab Champions\CrabChampions\Binaries\Win64\CrabChampions-Win64-Shipping.exe"
 exit /b 0
+
+:error
+echo Build step failed. See output above.
+exit /b 1
