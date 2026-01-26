@@ -36,6 +36,7 @@ Update
     Get Gold Dice Count
     Get Has Luck Ring
   }
+
   Create PP Pickup Info
   {
     Find Matching Interact Pickup
@@ -44,11 +45,14 @@ Update
     Get PP Pickup Info Pickup Count
     Get PP Pickup DA
     Get PP Pickup Info Level Description
+    
     Get Inventory Count
     {
       Get Inventory DA Count
     }
+
     Detect Level Description Text Replacements
+    
     Create PP Pickup Description Info
     {
       Get PP Pickup Description Info Values
@@ -68,6 +72,7 @@ Update
       }
     }
   }
+
   Set Name Pickup Count Text
   Create and Edit Text
   {
