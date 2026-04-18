@@ -19,7 +19,11 @@ SET /p packageOutput= < Tools\user_settings\package_output.txt
 python Tools\py\u4pak.py pack "%packageOutput%" CrabChampions -p 
 
 
-start "" "D:\Games\steamapps\common\Crab Champions\CrabChampions\Binaries\Win64\CrabChampions-Win64-Shipping.exe"
+SET /p gamePath= < Tools\user_settings\game_directory.txt 
+if "%gamePath%"=="" goto :skip_launch
+if not exist "%gamePath%\CrabChampions\Binaries\Win64\CrabChampions-Win64-Shipping.exe" goto :skip_launch
+start "" "%gamePath%\CrabChampions\Binaries\Win64\CrabChampions-Win64-Shipping.exe"
+:skip_launch
 exit /b 0
 
 :error
