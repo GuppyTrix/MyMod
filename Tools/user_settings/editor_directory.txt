@@ -1,1 +1,4 @@
+This file should store the path to the UE binary (example below)
+Once set, remove all text other than the path in this file
+
 C:\Program Files\Epic Games\UE_4.27\Engine\Binaries\Win64
