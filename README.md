@@ -4,6 +4,19 @@ A mod for [Crab Champions](https://store.steampowered.com/app/774801/Crab_Champi
 
 > **Note:** This is my first mod ever and my first time working with Unreal Engine, so the project is very much a work in progress and a bit messy. I intend to clean things up and improve it over time.
 
+- [Better Descriptions - Crab Champions Mod](#better-descriptions---crab-champions-mod)
+  - [Features](#features)
+  - [Requirements](#requirements)
+  - [Building the Mod](#building-the-mod)
+    - [`run_all.bat`](#run_allbat)
+  - [Game Reference Files](#game-reference-files)
+  - [Future Works](#future-works)
+    - [General](#general)
+    - [Pickup Information](#pickup-information)
+    - [Pickup-Specific](#pickup-specific)
+  - [Known Issues (as of 18/04/2026)](#known-issues-as-of-18042026)
+  - [License](#license)
+
 ## Features
 
 - **Toggle Keybind** - Press **P** to enable/disable the rich text info blocks
@@ -44,9 +57,9 @@ You can also run the individual steps separately using `cook_assets.bat` and `pa
 
 ## Game Reference Files
 
-The C++ stub headers used to reference the game's objects and classes in this project were generated using [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS) and [UE4GameProjectGenerator](https://github.com/Jeongmin94/UE4GameProjectGenerator). These files are up to date as of **18/04/2026** and are based on the **main branch** of Crab Champions (not the beta branch).
+The C++ stub headers used to reference the game's objects and classes in this project were generated usin[CrabChampions-ExampleProject](<https://gg> [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS) and [UE4GameProjectGenerator](https://github.com/Jeongmin94/UE4GameProjectGenerator). These files are up to date as of **18/04/2026** and are based on the **main branch** of Crab Champions (not the beta branch).
 
-An example project containing these generated reference files can be found here: **[CrabChampions-ExampleProject](https://github.com/GuppyTrix/CrabChampions-ExampleProject.git)**
+An example project containing these generated reference files can be found here: **ithub.com/GuppyTrix/CrabChampions-ExampleProject.git)**
 
 ## Future Works
 
